@@ -60,10 +60,14 @@ function sendShopeeMessage($message, $sessionID, $cookieSHOPEE) {
         'sec-gpc: 1',
         'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     ];
+    
+    // Masukkan UUID dan UserSig dari curl
+    $uuid = 'di sini';
+    $usersig = 'di sini';
 
     $data = [
-        'uuid' => 'peIyOcTKgnzx1vaHnYFlgiiymUt9eEE6',
-        'usersig' => '9k1uJ0a1-1dC2PkhNO6qy-fFym0LLDEadWODmBakaLvlikLJllT8kOQFEvBIpGsmAJfVEkciAeuSW_LLE0fhOohg8bJUt18Xwh0zNS8Nqj3V410KoX_66SQiQQ4=',
+        'uuid' => $uuid,
+        'usersig' => $usersig,
         'content' => '{"type":101,"content":"' . $message . '"}',
         'pin' => false,
     ];

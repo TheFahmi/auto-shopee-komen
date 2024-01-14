@@ -17,7 +17,7 @@ $client->setSessionID($sessionID);
 echo "SESSION DITEMUKAN ID: " . $client->getSessionID() . "\n\n";
 
 
-define('SHOPEE_API_URL', 'https://chatroom-live.shopee.co.id/api/v1/fetch/chatroom/SPIM-EO78Q48M7B400/message?uuid=peIyOcTKgnzx1vaHnYFlgiiymUt9eEE6&timestamp=1705215124&version=v2');
+define('SHOPEE_API_URL', 'masukkan https://chatroom-live.shopee.co.id/api/v1/fetch/chatroom/ sampe version=v2');
 define('SLEEP_TIME', 3);
 
 
